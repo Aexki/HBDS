@@ -191,20 +191,17 @@ button.photo:hover {
 @media(max-width:1500px) {
     .background img {
         width: 50%;
-        margin-top: 150px;
     }
 }
 
 @media(max-width:1150px) {
     .background img {
         width: 60%;
-        margin-top: 220px;
     }
 }
 
 @media(max-width:700px) {
     .background img {
-        margin-top: 250px;
         width: 90%;
     }
 }
