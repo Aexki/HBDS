@@ -180,12 +180,15 @@ button.photo {
     font-size: 20px;
     border-radius: 25px;
     outline: none;
+    color: white;
     background: transparent;
     border: 2px solid white;
 }
 
 button.photo:hover {
+    color: white;
     cursor: pointer;
+    box-shadow: 0 0 10px rgb(15, 116, 231), 0 0 40px rgb(15, 116, 231), 0 0 80px rgb(15, 116, 231);
 }
 
 @media(max-width:1500px) {
