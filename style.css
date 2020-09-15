@@ -4,7 +4,7 @@
 }
 
 nav {
-    height: 10vh;
+    height: 11vh;
     width: 100%;
     background-color: rgb(14, 0, 63);
     border-bottom: 2px solid white;
@@ -22,7 +22,7 @@ nav {
 }
 
 nav img {
-    height: 5vh;
+    height: 40px;
 }
 
 nav ul {
@@ -54,11 +54,11 @@ a:hover {
 }
 
 .checkbtn {
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     float: right;
     line-height: 80px;
-    margin-top: 20px;
+    margin-top: 8px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -117,13 +117,13 @@ a:hover {
 .background {
     background: url("images/Starsbackgroundupdatednew.gif") center center;
     width: 100%;
-    height: calc(100vh - 82px);
+    height: calc(89vh - 2px);
 }
 
 .background img {
     position: relative;
     left: 50%;
-    margin-top: 50px;
+    margin-top: 30px;
     transform: translateX(-50%);
     width: 50%;
 }
@@ -162,9 +162,9 @@ button.photo:hover {
 
 @media(max-width: 952px) {
     label.logoupdated {
-        font-size: 20px;
-        top: 15px;
-        margin-left: 50px;
+        font-size: 30px;
+        top: 17px;
+        margin-left: 40px;
     }
     nav ul li a {
         font-size: 16px;
@@ -178,9 +178,8 @@ button.photo:hover {
     ul {
         position: fixed;
         width: 100%;
-        height: 15vh;
         background: #2c3e50;
-        top: calc(10vh + 2px);
+        top: calc(11vh + 2px);
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -203,6 +202,7 @@ button.photo:hover {
     }
     .background img {
         width: 90%;
+        margin-top: 100px;
     }
 }
 
