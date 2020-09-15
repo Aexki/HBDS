@@ -11,3 +11,8 @@ recorder.addEventListener('change', function(e) {
     // Do something with the audio file.
     player.src = url;
 });
+
+function aboutme() {
+    window.alert('Name: Aman Jena\nDescription: Creator and Developer of the Page');
+    document.getElementById("check").checked = false
+}
