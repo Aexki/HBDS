@@ -160,7 +160,7 @@ a:hover {
 .background {
     background: url("images/Starsbackgroundupdatednew.gif") center center;
     width: 100%;
-    height: calc(90vh - 2px);
+    height: calc(100vh - 82px);
 }
 
 .background img {
@@ -186,9 +186,9 @@ button.photo {
 }
 
 button.photo:hover {
-    color: white;
+    color: rgb(223, 176, 22);
     cursor: pointer;
-    box-shadow: 0 0 10px rgb(15, 116, 231), 0 0 40px rgb(15, 116, 231), 0 0 80px rgb(15, 116, 231);
+    box-shadow: 0 0 10px rgb(223, 176, 22), 0 0 40px rgb(223, 176, 22), 0 0 80px rgb(223, 176, 22);
 }
 
 @media(max-width:1500px) {
