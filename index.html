@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,27 +21,28 @@
         </label>
         <label class="logoupdated"><img src="images/logo.jpg" alt="">ALSF</label>
         <ul>
-            <li><a href="">Contact</a></li>
+            <li><a onclick="history.go(0)">Home</a></li>
+            <li><a onclick="contact()">Contact</a></li>
             <li><a onclick="aboutme()">About Developer</a></li>
         </ul>
     </nav>
 
     <div class="pre-loader"></div>
 
-    <div class="background">
+    <div id="front">
         <img src="images/happybirthdayimage.png">
         <div class="getstarted">
-            <button class="photo">Get Photo</button>
+            <button class="photo" onclick="go()">Get Photo</button>
         </div>
     </div>
 
-    <div class="choice">
+    <div id="choice">
         <h1>Do you want to play a game before getting the photo..?</h1>
         <button class="yes">Yes, Let's Play..</button>
         <button class="no">No, I don't wanna play, I am a busy person..</button>
     </div>
 
-    <div class="game">
+    <div id="game">
         <h1>Here you go.. Choose Truth or Dare</h1>
         <button class="truth">Truth</button>Or
         <button class="dare">Dare</button>
@@ -49,14 +51,25 @@
         <audio id="player" controls></audio>
     </div>
 
-    <div class="typewriteranimation">
+    <div id="photo">
         <img id="saishree" src="images/sibuna.jpg">
-        <h1>
-            Wishing you an awesome day,With good luck on your way, Stay blessed and happy this day, Happy Birthday !!
-        </h1>
+        <h3>
+            Wishing you an awesome day, With good luck on your way,<br> Stay blessed and happy this day, Happy Birthday!!
+        </h3>
         <a href="images/sibuna.jpg" download="Teri">Download Now!!</a>
+        <audio src="audio/wish.mp3" id="wish"></audio>
     </div>
 
+    <div id="contact">
+        <label>Contact Me</label>
+        <form id="contactform">
+            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required><br><br>
+            <input type="email" name="email" id="email" placeholder="Your Email Address" autocomplete="off" required><br><br>
+            <input type="number" id="number" placeholder="Your Mobile Number(Optional)" autocomplete="off" pattern="[0-9]{10}"><br><br>
+            <textarea name="message" id="message" placeholder="Type Your Message Here..." autocomplete="off" required></textarea><br><br>
+            <input type="submit" value="Submit" id="contactbtn" onclick="sendEmail()">
+        </form>
+    </div>
 
     <a id="footer">MOD BY- AEXKI</a>
 

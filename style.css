@@ -1,228 +1,308 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-nav {
-    height: 11vh;
-    width: 100%;
-    background-color: rgb(14, 0, 63);
-    border-bottom: 2px solid white;
-}
-
-.logoupdated {
-    position: relative;
-    top: 10px;
-    color: white;
-    margin-left: 100px;
-    padding: 5px;
-    font-size: 30px;
-    letter-spacing: 5px;
-    border: 2px solid white;
-}
-
-nav img {
-    height: 40px;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-a.active,
-a:hover {
-    background: white;
-    color: rgb(14, 0, 63);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.checkbtn {
-    font-size: 35px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-top: 8px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-#saishree {
-    height: 80vh;
-}
-
-.typewriteranimation {
-    display: none;
-}
-
-.typewriteranimation h1 {
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 10s steps(110, end) forwards, blinkTextcursor 1s infinite normal;
-}
-
-@keyframes typing {
-    0% {
-        width: 0%;
+    * {
+        padding: 0;
+        margin: 0;
     }
-    100% {
+    
+    nav {
+        height: 11vh;
         width: 100%;
+        background-color: rgb(14, 0, 63);
+        border-bottom: 2px solid white;
     }
-}
-
-@keyframes blinkTextcursor {
-    0%,
-    100% {
-        border-right: 2px solid transparent;
-    }
-    50% {
-        border-right: 2px solid #222;
-    }
-}
-
-.choice {
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    display: none;
-}
-
-.game {
-    display: none;
-}
-
-.background {
-    background: url("images/Starsbackgroundupdatednew.gif") center center;
-    width: 100%;
-    height: calc(89vh - 2px);
-}
-
-.background img {
-    position: relative;
-    left: 50%;
-    margin-top: 30px;
-    transform: translateX(-50%);
-    width: 50%;
-}
-
-button.photo {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 25px;
-    outline: none;
-    color: white;
-    background: transparent;
-    border: 2px solid white;
-}
-
-button.photo:hover {
-    color: rgb(223, 176, 22);
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(223, 176, 22), 0 0 40px rgb(223, 176, 22), 0 0 80px rgb(223, 176, 22);
-}
-
-@media(max-width:1500px) {
-    .background img {
-        width: 50%;
-    }
-}
-
-@media(max-width:1150px) {
-    .background img {
-        width: 60%;
-    }
-}
-
-@media(max-width: 952px) {
-    label.logoupdated {
+    
+    .logoupdated {
+        position: relative;
+        top: 10px;
+        color: white;
+        margin-left: 100px;
+        padding: 5px;
         font-size: 30px;
-        top: 17px;
-        margin-left: 40px;
+        letter-spacing: 5px;
+        border: 2px solid white;
     }
-    nav ul li a {
-        font-size: 16px;
+    
+    nav img {
+        height: 40px;
     }
-}
-
-@media (max-width: 858px) {
-    .checkbtn {
-        display: block;
+    
+    nav ul {
+        float: right;
+        margin-right: 20px;
     }
-    ul {
-        position: fixed;
-        width: 100%;
-        background: #2c3e50;
-        top: calc(11vh + 2px);
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 29;
-    }
+    
     nav ul li {
-        display: block;
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
     }
+    
     nav ul li a {
-        font-size: 20px;
+        color: white;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
     }
-    nav ul li a:hover {
+    
+    a.active,
+    a:hover {
         background: white;
         color: rgb(14, 0, 63);
         transition: 0.5s;
         cursor: pointer;
     }
-    #check:checked~ul {
-        left: 0;
+    
+    .checkbtn {
+        font-size: 35px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-top: 8px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
     }
-    .background img {
-        width: 90%;
-        margin-top: 100px;
+    
+    #check {
+        display: none;
     }
-}
-
-.pre-loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url("images/paper-windmill.gif") center no-repeat #fff;
-}
-
-#footer {
-    background-color: black;
-    color: green;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border: 0.5px solid white;
-    margin-right: 10px;
-    padding: 5px;
-}
+    
+    #contact {
+        border: 2px solid white;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 30px;
+        background: black;
+        display: none;
+    }
+    
+    #contactform {
+        margin-top: 20px;
+    }
+    
+    #contact input {
+        width: 310px;
+        padding: 4px;
+        border: 1.5px solid white;
+        background: black;
+        color: white;
+        outline: none;
+        caret-color: white;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    #contact input::placeholder,
+    #contact textarea::placeholder {
+        color: white;
+        opacity: 0.7;
+    }
+    
+    #contact textarea {
+        background: black;
+        outline: none;
+        padding: 4px;
+        border: 1.5px solid white;
+        caret-color: white;
+        color: white;
+    }
+    
+    #contact label {
+        font-size: 52px;
+        padding-bottom: 50px;
+        color: white;
+    }
+    
+    #message {
+        width: 310px;
+        height: 60px;
+    }
+    
+    #contact input[type=submit] {
+        width: 200px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    #contact input[type=submit]:hover {
+        width: 210px;
+        border-radius: 10px;
+    }
+    
+    #saishree {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 330px;
+    }
+    
+    #photo {
+        display: none;
+    }
+    
+    #photo h3 {
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 15s forwards;
+    }
+    
+    @keyframes typing {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    
+    @keyframes blinkTextcursor {
+        0%,
+        100% {
+            border-right: 2px solid transparent;
+        }
+        50% {
+            border-right: 2px solid #222;
+        }
+    }
+    
+    #choice {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        display: none;
+    }
+    
+    #game {
+        display: none;
+    }
+    
+    #front {
+        background: url("images/Starsbackgroundupdatednew.gif") center center;
+        width: 100%;
+        height: calc(89vh - 2px);
+    }
+    
+    #front img {
+        position: relative;
+        left: 50%;
+        margin-top: 30px;
+        transform: translateX(-50%);
+        width: 50%;
+    }
+    
+    button.photo {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+        outline: none;
+        color: white;
+        background: transparent;
+        border: 2px solid white;
+    }
+    
+    button.photo:hover {
+        color: rgb(223, 176, 22);
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(223, 176, 22), 0 0 40px rgb(223, 176, 22), 0 0 80px rgb(223, 176, 22);
+    }
+    
+    @media(max-width:1500px) {
+        #front img {
+            width: 50%;
+        }
+    }
+    
+    @media(max-width:1150px) {
+        #front img {
+            width: 60%;
+        }
+    }
+    
+    @media(max-width: 952px) {
+        label.logoupdated {
+            font-size: 25px;
+            top: 17px;
+            letter-spacing: 3px;
+            margin-left: 40px;
+        }
+        nav ul li a {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 858px) {
+        .checkbtn {
+            display: block;
+        }
+        ul {
+            position: fixed;
+            width: 100%;
+            background: #2c3e50;
+            top: calc(11vh + 2px);
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 29;
+            border-bottom: 2px solid white;
+        }
+        nav ul li {
+            display: block;
+        }
+        nav ul li a {
+            font-size: 20px;
+        }
+        nav ul li a:hover {
+            background: white;
+            color: rgb(14, 0, 63);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #check:checked~ul {
+            left: 0;
+        }
+        #front img {
+            width: 90%;
+            margin-top: 100px;
+        }
+        #contact input {
+            width: 250px;
+        }
+        #message {
+            width: 250px;
+        }
+    }
+    
+    .pre-loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url("images/paper-windmill.gif") center no-repeat #fff;
+    }
+    
+    #footer {
+        background-color: black;
+        color: green;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 0.5px solid white;
+        margin-right: 10px;
+        padding: 5px;
+    }
