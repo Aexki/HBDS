@@ -9,7 +9,7 @@ function aboutme() {
 
 function go() {
     document.getElementById("front").style.display = "none"
-    document.getElementById("photo").style.display = "block"
+    document.getElementById("photobackground").style.display = "block"
     setTimeout(() => {
         document.getElementById("wish").play()
     }, 2000);
@@ -18,6 +18,7 @@ function go() {
 function contact() {
     document.body.style.backgroundImage = "url('images/contact_background.jpg')";
     document.getElementById("front").style.display = "none"
+    document.getElementById("photobackground").style.display = "none"
     document.getElementById("contact").style.display = "block"
     $("#check").prop("checked", false)
 }
@@ -40,13 +41,13 @@ function sendEmail() {
                         To: 'autoaexki@gmail.com',
                         From: "learningaexki@gmail.com",
                         Subject: "Message from HBDS",
-                        Body: "Name: " + name +
-                            "Email: " + email +
-                            "Number: " + number +
+                        Body: "Name: " + name + " " +
+                            "Email: " + email + " " +
+                            "Number: " + number + " " +
                             "Message: " + message,
                     })
                     .then(function(message) {
-                        window.alert("Your Message has been Successfully Sent..")
+                        window.alert("Your Message has been Successfully Recorded..")
                     });
             } else {
                 window.alert("The Mobile No. must be at least 10 digit long!");

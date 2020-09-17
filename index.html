@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,20 +53,22 @@
         <audio id="player" controls></audio>
     </div>
 
-    <div id="photo">
-        <img id="saishree" src="images/sibuna.jpg">
-        <h3>
-            Wishing you an awesome day, With good luck on your way,<br> Stay blessed and happy this day, Happy Birthday!!
-        </h3>
-        <a href="images/sibuna.jpg" download="Teri">Download Now!!</a>
-        <audio src="audio/wish.mp3" id="wish"></audio>
+    <div id="photobackground">
+        <div id="photo">
+            <img id="saishree" src="images/sibuna.jpg">
+            <p>
+                Wishing you an awesome day, with good luck on your way,<br> Stay blessed and happy this day,<br> Happy Birthday..!!
+            </p>
+            <a href="images/sibuna.jpg" download="Teri"><i class="fas fa-download"></i></a>
+            <audio src="audio/wish.mp3" id="wish"></audio>
+        </div>
     </div>
 
     <div id="contact">
         <label>Contact Me</label>
-        <form id="contactform">
-            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required><br><br>
-            <input type="email" name="email" id="email" placeholder="Your Email Address" autocomplete="off" required><br><br>
+        <form id="contactform" onsubmit="return false">
+            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" spellcheck="false" required><br><br>
+            <input type="email" name="email" id="email" placeholder="Your Email Address" autocomplete="off" spellcheck="false" required><br><br>
             <input type="number" id="number" placeholder="Your Mobile Number(Optional)" autocomplete="off" pattern="[0-9]{10}"><br><br>
             <textarea name="message" id="message" placeholder="Type Your Message Here..." autocomplete="off" required></textarea><br><br>
             <input type="submit" value="Submit" id="contactbtn" onclick="sendEmail()">
