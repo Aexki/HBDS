@@ -228,6 +228,7 @@
     }
     
     #choice button:hover {
+        cursor: pointer;
         background: black;
         color: white;
         border: 2px solid white;
@@ -255,6 +256,99 @@
     }
     
     #game button:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 2px solid white;
+    }
+    
+    #gamechoose {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        display: none;
+        text-align: center;
+        display: none;
+    }
+    
+    #gamechoose h1 {
+        margin: 20px 0;
+    }
+    
+    #gamechoose button {
+        padding: 10px;
+        margin: 10px 10px;
+        border: 2px solid black;
+    }
+    
+    #gamechoose button:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 2px solid white;
+    }
+    
+    #truth {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        display: none;
+    }
+    
+    #question {
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    #truthanswer {
+        width: 280px;
+        height: 50px;
+        margin-top: 20px;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    
+    #truthsubmit {
+        padding: 5px;
+        border: 2px solid black;
+    }
+    
+    #truthsubmit:hover {
+        cursor: pointer;
+        background: black;
+        color: white;
+        border: 2px solid white;
+    }
+    
+    #dare {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        display: none;
+    }
+    
+    #task {
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 20px;
+        min-width: 300px;
+    }
+    
+    #daredone {
+        padding: 5px;
+        border: 2px solid black;
+        margin-top: 20px;
+    }
+    
+    #daredone:hover {
+        cursor: pointer;
         background: black;
         color: white;
         border: 2px solid white;
@@ -351,6 +445,9 @@
         #front img {
             width: 90%;
             margin-top: 100px;
+        }
+        #contact label {
+            font-size: 44px;
         }
         #contact input {
             width: 250px;

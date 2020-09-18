@@ -40,13 +40,35 @@
 
     <div id="choice">
         <h1>Do you want to play a game before getting the photo?</h1>
-        <button class="yes" onclick="game()">Yes, Let's Play..</button>
-        <button class="no" onclick="busy()">No, I don't wanna play, I am a busy person..</button>
+        <button onclick="gamechoose()">Yes, Let's Play..</button>
+        <button onclick="busy()">No, I don't wanna play, I am a busy person..</button>
+    </div>
+
+    <div id="gamechoose">
+        <h1>How about playing Truth and Dare..?</h1>
+        <button onclick="game()">Alright, let's Play..</button><br>
+        <button onclick="window.alert(`I haven't programmed any other game, just truth and dare..`)">No, I don't wanna play this game. Lets choose another game.</button><br>
+        <button onclick="busy()">Nah, I don't wanna play anymore, just give me my photo..</button>
     </div>
 
     <div id="game">
-        <h1>Ok Truth and Dare is here, Choose..</h1>
-        <button class="truth">Truth</button><span>  Or  </span><button class="dare">Dare</button>
+        <h1>Now Choose :</h1>
+        <button onclick="truth()">Truth</button><span>  Or  </span><button onclick="dare()">Dare</button>
+    </div>
+
+    <div id="truth">
+        <h1>Answer the question truthfully:</h1>
+        <div id="question"></div>
+        <form onsubmit="return false">
+            <textarea name="message" id="truthanswer" placeholder="Answer honestly.." autocomplete="off" required></textarea><br><br>
+            <input type="submit" value="Submit: Get Photo now.." id="truthsubmit" onclick="checkanswer()">
+        </form>
+    </div>
+
+    <div id="dare">
+        <h1>I dare you to do this:</h1>
+        <div id="task"></div>
+        <button id="daredone" onclick="daredone()">Ok I will do it.. Give me my photo</button>
     </div>
 
     <div id="photobackground">
