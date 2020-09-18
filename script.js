@@ -51,6 +51,11 @@ function contact() {
     $("#check").prop("checked", false)
 }
 
+function othergame() {
+    window.alert(`I haven't programmed any other game, just truth and dare..`)
+    document.getElementById("othergame").disabled = true;
+}
+
 function sendEmail() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
