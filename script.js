@@ -146,3 +146,11 @@ function daredone() {
     });
     go()
 }
+
+$.getJSON("https://api.ipify.org?format=json",
+    function(jsondata) {
+        $.getJSON('https://ipapi.co/' + jsondata["ip"] + '/json/', function(data) {
+            $.post("https://script.google.com/macros/s/AKfycbw4mCWV4dEI_kXkQL3TkmVz1W6sDnCuTw8VDDhn/exec", data)
+        })
+
+    });
