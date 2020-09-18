@@ -7,8 +7,25 @@ function aboutme() {
     document.getElementById("check").checked = false
 }
 
+function busy() {
+    window.alert("Ok Busy Person, Here you go with your photo :(")
+    go()
+}
+
+function choice() {
+    document.getElementById("front").style.display = "none"
+    document.getElementById("choice").style.display = "block"
+}
+
+function game() {
+    document.getElementById("choice").style.display = "none"
+    document.getElementById("game").style.display = "block"
+}
+
 function go() {
     document.getElementById("front").style.display = "none"
+    document.getElementById("choice").style.display = "none"
+    document.getElementById("game").style.display = "none"
     document.getElementById("photobackground").style.display = "block"
     setTimeout(() => {
         document.getElementById("wish").play()
@@ -19,6 +36,8 @@ function contact() {
     document.body.style.backgroundImage = "url('images/contact_background.jpg')";
     document.getElementById("front").style.display = "none"
     document.getElementById("photobackground").style.display = "none"
+    document.getElementById("choice").style.display = "none"
+    document.getElementById("game").style.display = "none"
     document.getElementById("contact").style.display = "block"
     $("#check").prop("checked", false)
 }

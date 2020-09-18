@@ -169,8 +169,6 @@
         color: black;
         font-size: 30px;
         left: 70px;
-        border: 2px solid black;
-        border-radius: 35px;
         padding: 8px;
     }
     
@@ -179,7 +177,6 @@
         text-decoration: none;
         background: transparent;
         color: white;
-        border: 2px solid white;
     }
     
     #saishree {
@@ -217,10 +214,50 @@
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         display: none;
+        text-align: center;
+    }
+    
+    #choice h1 {
+        margin: 20px 0;
+    }
+    
+    #choice button {
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid black;
+    }
+    
+    #choice button:hover {
+        background: black;
+        color: white;
+        border: 2px solid white;
     }
     
     #game {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
         display: none;
+        text-align: center;
+        display: none;
+    }
+    
+    #game h1 {
+        margin: 20px 0;
+    }
+    
+    #game button {
+        padding: 10px;
+        margin: 10px 10px;
+        border: 2px solid black;
+    }
+    
+    #game button:hover {
+        background: black;
+        color: white;
+        border: 2px solid white;
     }
     
     #front {
@@ -323,14 +360,21 @@
         }
         #photo p {
             top: 160px;
-            font-size: 18px;
+            font-size: 17px;
         }
         #saishree {
-            width: 340px;
+            width: 330px;
             top: 60px;
         }
         #photo a {
-            left: 20px;
+            padding: 6px;
+            left: 25px;
+        }
+        button.photo {
+            top: 30px;
+            width: 150px;
+            font-size: 16px;
+            height: 40px;
         }
     }
     

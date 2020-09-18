@@ -34,23 +34,19 @@
     <div id="front">
         <img src="images/happybirthdayimage.png">
         <div class="getstarted">
-            <button class="photo" onclick="go()">Get Photo</button>
+            <button class="photo" onclick="choice()">Get Photo</button>
         </div>
     </div>
 
     <div id="choice">
-        <h1>Do you want to play a game before getting the photo..?</h1>
-        <button class="yes">Yes, Let's Play..</button>
-        <button class="no">No, I don't wanna play, I am a busy person..</button>
+        <h1>Do you want to play a game before getting the photo?</h1>
+        <button class="yes" onclick="game()">Yes, Let's Play..</button>
+        <button class="no" onclick="busy()">No, I don't wanna play, I am a busy person..</button>
     </div>
 
     <div id="game">
-        <h1>Here you go.. Choose Truth or Dare</h1>
-        <button class="truth">Truth</button>Or
-        <button class="dare">Dare</button>
-
-        <input type="file" accept="audio/*" capture id="recorder">
-        <audio id="player" controls></audio>
+        <h1>Ok Truth and Dare is here, Choose..</h1>
+        <button class="truth">Truth</button><span>  Or  </span><button class="dare">Dare</button>
     </div>
 
     <div id="photobackground">
