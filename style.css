@@ -430,6 +430,9 @@
         nav ul li {
             display: block;
         }
+          nav ul li a{
+             font-size:20px;
+          }
         nav ul li a:hover {
             background: white;
             color: rgb(14, 0, 63);
